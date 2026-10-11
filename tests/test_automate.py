@@ -75,3 +75,4 @@ class AutomateHttpPost(unittest.TestCase):
         self.assertIn(status, (200, 400, 500), body)
         self.assertIsInstance(body, dict)
         self.assertIn("error", body)
+        self.assertNotNull(body)
